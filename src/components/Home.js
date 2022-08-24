@@ -15,6 +15,7 @@ function Home() {
     const auth = getAuth();
 
     useEffect(() => {
+        
         onAuthStateChanged(auth, ((user) => {
             if (user) {
                 dispatch(login({
@@ -24,11 +25,10 @@ function Home() {
                 }))
             }
         }))
-    }, [])
+    }, [auth, dispatch])
     
     
     const userEmail = useSelector(selectUserEmail);
-    console.log("User from aaaaaaaaaaaaaaa", userEmail);
 
   return (
       <div className='home'>

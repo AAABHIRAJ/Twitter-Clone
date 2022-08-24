@@ -8,7 +8,7 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
 import PostButton from './PostButton';
 import { useSelector } from 'react-redux';
-import { selectUserName, selectUserPhoto } from '../features/userSlice';
+import {  selectUserPhoto } from '../features/userSlice';
 
 const Post = forwardRef(({displayName, userName, verified, details, postImg}, ref)  => {
   const photo = useSelector(selectUserPhoto);
@@ -27,7 +27,7 @@ const Post = forwardRef(({displayName, userName, verified, details, postImg}, re
         </div>
         <div className='post__details'>
             <span>{details }</span>
-            <img className='post__img' src={postImg} />
+            <img className='post__img' src={postImg} alt="" />
         </div>
         
         <div className='post__buttons'>
