@@ -1,0 +1,33 @@
+.feed{
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    border-right: 1px solid rgba(0,0,0,0.05);
+    overflow-y: scroll;
+}
+
+.feed__heading{
+    font-size: 22px;
+    padding: 13px;
+    letter-spacing: 0.5px;
+    background-color: white;
+    opacity: 0.99;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    margin-bottom: 15px;
+}
+
+.feed::-webkit-scrollbar{
+    display: none;
+}
+
+@media(max-width:768px){
+    .feed{
+        flex: 1;
+        max-width: 650px;
+        margin: auto;
+    }
+    
+}

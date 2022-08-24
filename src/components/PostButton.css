@@ -1,0 +1,20 @@
+.postbutton{
+    display: flex;
+    align-items:center ;
+    cursor: pointer;
+}
+
+.postbutton:hover{
+    color: rgba(29,155,240,0.8);
+}
+
+.postbutton > span{
+    margin-left: 15px;
+}
+.postbutton__icon{
+    padding: 10px;
+    border-radius: 50%;
+}
+.postbutton__icon:hover{
+    background-color: rgba(29,155,240,0.3);
+}
